@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/com/java/nikhil/flightReservation/CustomerRegistrationPages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/Configuration.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/java/nikhil/flightReservation/tests/CustomerRegistrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2tquIT58OHldjr76whuoePP476u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Automation/Projects/AutomationProject/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationPages.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationPages.getGoogle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationTests.launchCustomerPortal.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation/Projects/AutomationProject/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.24707031&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.java.nikhil.flightReservation.pages" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\Projects\AutomationProject\src\main\java" />
+      <recent name="C:\Automation\Projects\AutomationProject\src\main\Base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\Projects\AutomationProject\src\main\java" />
+      <recent name="C:\Automation\Projects\AutomationProject\src\main\resources\config" />
+      <recent name="C:\Automation\Projects\AutomationProject\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Automation/Projects/AutomationProject/testng.xml">
+    <configuration name="C:/Automation/Projects/AutomationProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegistrationPages" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.nikhil.flightReservation.pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.nikhil.flightReservation.pages" />
+      <option name="MAIN_CLASS_NAME" value="com.java.nikhil.flightReservation.pages.CustomerRegistrationPages" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegistrationPages.getGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.nikhil.flightReservation.pages.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.nikhil.flightReservation.pages" />
+      <option name="MAIN_CLASS_NAME" value="com.java.nikhil.flightReservation.pages.CustomerRegistrationPages" />
+      <option name="METHOD_NAME" value="getGoogle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegistrationTests.launchCustomerPortal" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.java.nikhil.flightReservation.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.java.nikhil.flightReservation.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.java.nikhil.flightReservation.tests.CustomerRegistrationTests" />
+      <option name="METHOD_NAME" value="launchCustomerPortal" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/testng.xml" />
+        <item itemvalue="TestNG.CustomerRegistrationTests.launchCustomerPortal" />
+        <item itemvalue="TestNG.CustomerRegistrationPages.getGoogle" />
+        <item itemvalue="TestNG.CustomerRegistrationPages" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="" />
+      <created>1741091849695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741091849695</updated>
+    </task>
+    <servers />
+  </component>
+</project>
