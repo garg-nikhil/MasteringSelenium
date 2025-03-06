@@ -1,0 +1,23 @@
+services:
+ hub:                           # - This is service name
+   image : selenium/hub:4.27    # - This is image for above service
+   ports:
+    - 4444:4444
+ chrome:
+   image : selenium/node-chromium:4.27
+   shm_size: '2g'       # - shared memory size. Recommended to use 2g otherwise it will crash
+   depends_on:          # - It says to start hub first and then chrome as its dependent on hub
+    - hub
+   environment:
+    - SE_EVENT_BUS_HOST=hub
+    - SE_EVENT_BUS_PUBLISH_PORT=4442
+    - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+ firefox:
+   image : selenium/node-firefox:4.27
+   shm_size: '2g'
+   depends_on:
+    - hub
+   environment:
+      - SE_EVENT_BUS_HOST=hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
