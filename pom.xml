@@ -16,6 +16,7 @@
     <webdriver.manager.version>5.9.2</webdriver.manager.version>
     <testng.version>7.10.2</testng.version>
     <jackson.version>2.18.2</jackson.version>
+    <rest.assured.version>5.5.0</rest.assured.version>
     <!-- plugins versions -->
     <maven.compiler.version>3.11.0</maven.compiler.version>
     <maven.dependency.version>3.6.0</maven.dependency.version>
@@ -52,7 +53,7 @@
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>${webdriver.manager.version}</version>
-      <scope>test</scope>
+      <scope>compile</scope>
     </dependency>
     <!-- To deserialize json into Java object or vice versa -->
     <dependency>
@@ -68,11 +69,11 @@
       <version>${testng.version}</version>
       <scope>compile</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
     <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>5.9.2</version>
-      <scope>compile</scope>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${rest.assured.version}</version>
     </dependency>
 
   </dependencies>
@@ -96,7 +97,7 @@
         <configuration>
           <systemPropertyVariables>
             <browser>chrome</browser>
-            <selenium.grid.enabled>true</selenium.grid.enabled>
+            <selenium.grid.enabled>false</selenium.grid.enabled>
           </systemPropertyVariables>
           <suiteXmlFiles>
             <file>testng.xml</file>

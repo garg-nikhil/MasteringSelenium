@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Docker/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/test-suite/FlightReservationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RestAssured/ApiTestingBasics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,33 +61,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Docker.Docker/docker-compose.yaml: Compose Deployment.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.AutomationProject [clean,install].executor": "Run",
-    "Maven.AutomationProject [clean].executor": "Run",
-    "Maven.AutomationProject [compile].executor": "Run",
-    "Maven.AutomationProject [install].executor": "Run",
-    "Maven.AutomationProject [validate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml.executor": "Run",
-    "TestNG.C:/Automation/Projects/AutomationProject/testng.xml.executor": "Run",
-    "TestNG.CustomerRegistrationPages.executor": "Run",
-    "TestNG.CustomerRegistrationPages.getGoogle.executor": "Run",
-    "TestNG.CustomerRegistrationTests.launchCustomerPortal.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Automation/Projects/Selenium_Docker",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.24707031",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Docker.Docker/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.AutomationProject [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Automation/Projects/AutomationProject/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationPages.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationPages.getGoogle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationTests.launchCustomerPortal.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation/Projects/Selenium_Docker&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.24707031&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.java.nikhil.flightReservation.pages" />
@@ -104,7 +102,25 @@
       <recent name="C:\Automation\Projects\AutomationProject\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml">
+  <component name="RunManager" selected="TestNG.ApiTestingBasics.getGoogle">
+    <configuration name="ApiTestingBasics.getGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RestAssured.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RestAssured" />
+      <option name="MAIN_CLASS_NAME" value="RestAssured.ApiTestingBasics" />
+      <option name="METHOD_NAME" value="getGoogle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/test-suite/FlightReservationTests.xml" />
@@ -119,24 +135,6 @@
       <module name="AutomationProject" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerRegistrationPages.getGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.java.nikhil.flightReservation.pages.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.java.nikhil.flightReservation.pages" />
-      <option name="MAIN_CLASS_NAME" value="com.java.nikhil.flightReservation.pages.CustomerRegistrationPages" />
-      <option name="METHOD_NAME" value="getGoogle" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -170,16 +168,18 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ApiTestingBasics.getGoogle" />
         <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml" />
         <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/testng.xml" />
         <item itemvalue="Docker.Docker/docker-compose.yaml: Compose Deployment" />
         <item itemvalue="TestNG.CustomerRegistrationTests.launchCustomerPortal" />
-        <item itemvalue="TestNG.CustomerRegistrationPages.getGoogle" />
       </list>
     </recent_temporary>
   </component>
