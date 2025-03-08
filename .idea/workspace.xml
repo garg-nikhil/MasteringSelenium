@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +76,7 @@
     "TestNG.ApiTestingBase.testBasicAuth.executor": "Run",
     "TestNG.ApiTestingBasics.getGoogle.executor": "Run",
     "TestNG.BaseClass.devtools.executor": "Run",
+    "TestNG.BaseClass.interpretNetworkCalls.executor": "Run",
     "TestNG.BaseClass.setGeolocation.executor": "Run",
     "TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml.executor": "Run",
     "TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml.executor": "Run",
@@ -111,25 +110,7 @@
       <recent name="C:\Automation\Projects\AutomationProject\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BaseClass.setGeolocation">
-    <configuration name="ApiTestingBase.testBasicAuth" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="RestAssured.ApiTestingBase" />
-      <option name="METHOD_NAME" value="testBasicAuth" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.BaseClass.interpretNetworkCalls">
     <configuration name="BaseClass.devtools" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
       <extension name="coverage">
@@ -141,6 +122,24 @@
       <option name="PACKAGE_NAME" value="Base" />
       <option name="MAIN_CLASS_NAME" value="Base.BaseClass" />
       <option name="METHOD_NAME" value="devtools" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseClass.interpretNetworkCalls" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Base" />
+      <option name="MAIN_CLASS_NAME" value="Base.BaseClass" />
+      <option name="METHOD_NAME" value="interpretNetworkCalls" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -192,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BaseClass.interpretNetworkCalls" />
         <item itemvalue="TestNG.BaseClass.setGeolocation" />
         <item itemvalue="TestNG.BaseClass.devtools" />
         <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml" />
         <item itemvalue="Docker.Selenium Grid/docker-compose.yaml: Compose Deployment" />
-        <item itemvalue="TestNG.ApiTestingBase.testBasicAuth" />
       </list>
     </recent_temporary>
   </component>

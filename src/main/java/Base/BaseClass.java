@@ -12,6 +12,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v131.fetch.model.AuthChallengeResponse;
+import org.openqa.selenium.devtools.v131.network.Network;
+import org.openqa.selenium.devtools.v131.network.model.Request;
+import org.openqa.selenium.devtools.v131.network.model.Response;
 import org.openqa.selenium.devtools.v85.emulation.Emulation;
 import org.openqa.selenium.devtools.v85.emulation.model.ScreenOrientation;
 import org.openqa.selenium.devtools.v85.page.model.Viewport;
@@ -185,6 +189,36 @@ public class BaseClass {
         }
     }*/
 
+    @Test
+    private void interpretNetworkCalls(){
+        WebDriverManager.chromedriver().setup();
+        ChromeDriver driver = new ChromeDriver();
+
+        DevTools devTools = driver.getDevTools();
+        devTools.createSession();
+        devTools.send(Network.enable(Optional.empty(),Optional.empty(),Optional.empty()));
+
+        devTools.addListener(Network.requestWillBeSent(), Request ->
+        {
+            Request request = Request.getRequest();
+            log.info("Request URL: "+request.getUrl());
+            log.info("Request headers: "+request.getHeaders().toString());
+
+        });
+
+        devTools.addListener(Network.responseReceived(), Response ->
+        {
+            org.openqa.selenium.devtools.v131.network.model.Response response = Response.getResponse();
+            log.info("Response status: "+response.getStatus());
+            log.info("Response status text: "+response.getStatusText());
+        });
+
+        driver.get("https://dev.console.hcl-x.com/");
+        driver.findElement(By.xpath("//*[@id='username']")).sendKeys("nikhil.garg@hcl.com");
+        driver.findElement(By.xpath("//*[@id='password']")).sendKeys("India@2023");
+        driver.findElement(By.xpath("//*[@id='kc-login']")).click();
+
+    }
 
 
 }
