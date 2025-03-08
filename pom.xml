@@ -96,18 +96,19 @@
         <version>${maven.surefire.version}</version>
         <configuration>
           <systemPropertyVariables>
-            <browser>chrome</browser>
-            <selenium.grid.enabled>false</selenium.grid.enabled>
-          </systemPropertyVariables>
-          <suiteXmlFiles>
-            <file>testng.xml</file>
-          </suiteXmlFiles>
-          <parallel>tests</parallel>
-          <threadCount>1</threadCount>
-          <reportsDirectory>target/test-output</reportsDirectory>
-        </configuration>
-      </plugin>
-      <!-- To copy all the dependencies to run our tests as part of "mvn package" -->
+            <!-- To run the tests using chrome using testng suite comment this line -->
+       <browser>chrome</browser>
+        <selenium.grid.enabled>false</selenium.grid.enabled>
+      </systemPropertyVariables>
+      <suiteXmlFiles>
+        <file>testng.xml</file>
+      </suiteXmlFiles>
+      <parallel>tests</parallel>
+      <threadCount>1</threadCount>
+      <reportsDirectory>target/test-output</reportsDirectory>
+    </configuration>
+  </plugin>
+  <!-- To copy all the dependencies to run our tests as part of "mvn package" -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
@@ -133,13 +134,16 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>${maven.jar.version}</version>
         <configuration>
-          <outputDirectory>${package.directory}</outputDirectory>
+          <outputDirectory>${package.directory}/libs</outputDirectory>
         </configuration>
         <executions>
           <execution>
             <goals>
               <goal>test-jar</goal>
             </goals>
+            <configuration>
+              <includes>**/*.class</includes>
+            </configuration>
           </execution>
         </executions>
       </plugin>

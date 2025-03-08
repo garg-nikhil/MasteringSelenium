@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAssured/ApiTestingBasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAssured/ApiTestingBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +66,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Docker.Docker/docker-compose.yaml: Compose Deployment.executor": "Run",
+    "Docker.Selenium Grid/docker-compose.yaml: Compose Deployment.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.AutomationProject [clean,install].executor": "Run",
     "Maven.AutomationProject [clean].executor": "Run",
@@ -73,7 +77,10 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ApiTestingBase.testBasicAuth.executor": "Run",
     "TestNG.ApiTestingBasics.getGoogle.executor": "Run",
+    "TestNG.BaseClass.devtools.executor": "Run",
+    "TestNG.BaseClass.setGeolocation.executor": "Run",
     "TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml.executor": "Run",
+    "TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml.executor": "Run",
     "TestNG.C:/Automation/Projects/AutomationProject/testng.xml.executor": "Run",
     "TestNG.CustomerRegistrationPages.executor": "Run",
     "TestNG.CustomerRegistrationPages.getGoogle.executor": "Run",
@@ -81,7 +88,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Automation/Projects/Selenium_Docker",
+    "last_opened_file_path": "C:/Automation/Projects/AutomationProject/src/test/test-suite",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.24707031",
     "project.structure.side.proportion": "0.2",
@@ -93,34 +100,18 @@
       <recent name="com.java.nikhil.flightReservation.pages" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\Projects\AutomationProject\src\test\test-suite" />
       <recent name="C:\Automation\Projects\AutomationProject\src\main\java" />
       <recent name="C:\Automation\Projects\AutomationProject\src\main\Base" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\Projects\AutomationProject\src\main\resources\Docker\Selenium Grid" />
       <recent name="C:\Automation\Projects\AutomationProject\src\main\java" />
       <recent name="C:\Automation\Projects\AutomationProject\src\main\resources\config" />
       <recent name="C:\Automation\Projects\AutomationProject\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ApiTestingBase.testBasicAuth">
-    <configuration name="ApiTestingBase.getGoogle" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RestAssured.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RestAssured" />
-      <option name="MAIN_CLASS_NAME" value="RestAssured.ApiTestingBase" />
-      <option name="METHOD_NAME" value="getGoogle" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.BaseClass.setGeolocation">
     <configuration name="ApiTestingBase.testBasicAuth" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
       <extension name="coverage">
@@ -139,9 +130,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseClass.devtools" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/test-suite/FlightReservationTests.xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Base" />
+      <option name="MAIN_CLASS_NAME" value="Base.BaseClass" />
+      <option name="METHOD_NAME" value="devtools" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseClass.setGeolocation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Base" />
+      <option name="MAIN_CLASS_NAME" value="Base.BaseClass" />
+      <option name="METHOD_NAME" value="setGeolocation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -149,20 +176,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Automation/Projects/AutomationProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Docker/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="Selenium Grid/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="sourceFilePath" value="src/main/resources/Docker/docker-compose.yaml" />
+          <option name="sourceFilePath" value="src/main/resources/Docker/Selenium Grid/docker-compose.yaml" />
         </settings>
       </deployment>
       <method v="2" />
@@ -175,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.BaseClass.setGeolocation" />
+        <item itemvalue="TestNG.BaseClass.devtools" />
+        <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTestsWithParameterizedBrowser.xml" />
+        <item itemvalue="Docker.Selenium Grid/docker-compose.yaml: Compose Deployment" />
         <item itemvalue="TestNG.ApiTestingBase.testBasicAuth" />
-        <item itemvalue="TestNG.ApiTestingBase.getGoogle" />
-        <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml" />
-        <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/testng.xml" />
-        <item itemvalue="Docker.Docker/docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>

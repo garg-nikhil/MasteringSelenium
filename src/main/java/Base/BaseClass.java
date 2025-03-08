@@ -1,14 +1,20 @@
 package Base;
 
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
+import com.beust.jcommander.Parameter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Capabilities;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v85.emulation.Emulation;
+import org.openqa.selenium.devtools.v85.emulation.model.ScreenOrientation;
+import org.openqa.selenium.devtools.v85.page.model.Viewport;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -17,11 +23,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 import utilities.ConfigReader;
 
 import java.io.FileInputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Optional;
 import java.util.Properties;
 
 public class BaseClass {
@@ -42,12 +53,24 @@ public class BaseClass {
         }
     }
 
+    // Use following method to open chrome in mobile view
     public void devtools(){
-        DevTools tools = ((ChromeDriver) driver).getDevTools();
-        tools.createSession();
+        WebDriverManager.chromedriver().setup();
+
+        // ✅ Define Mobile Emulation Settings
+        Map<String, Object> mobileEmulation = new HashMap<>();
+        mobileEmulation.put("deviceName", "iPhone SE");  // Uses built-in Pixel 5 emulation
+
+        // ✅ Apply to ChromeOptions
+        ChromeOptions options = new ChromeOptions();
+        options.setExperimentalOption("mobileEmulation", mobileEmulation);
+
+        // ✅ Launch Chrome in Mobile Mode
+        ChromeDriver driver = new ChromeDriver(options);  // 🛠️ Apply ChromeOptions here
+        driver.get("https://dev.console.hcl-x.com/");
     }
 
-    @BeforeMethod
+    //@BeforeMethod
     public void setupBrowser(){
         loadConfig();
         log.info("**********************************************************************");
@@ -66,11 +89,11 @@ public class BaseClass {
     private WebDriver getRemoteDriver(){
         Capabilities capabilities;
         if(System.getProperty("browser").equalsIgnoreCase("chrome")){
-             capabilities = new ChromeOptions();
-             log.info("Launching remote chrome browser");
+            capabilities = new ChromeOptions();
+            log.info("Launching remote chrome browser");
         }
         else{
-             capabilities = new FirefoxOptions();
+            capabilities = new FirefoxOptions();
             log.info("Launching remote firefox browser");
         }
         try {
@@ -81,7 +104,6 @@ public class BaseClass {
     }
 
     private WebDriver getLocalDriver(){
-
         if (ConfigReader.getProperty("browser").equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
@@ -99,11 +121,70 @@ public class BaseClass {
         return driver;
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void tearDown(){
         if (driver != null){
-        driver.quit();
+            driver.quit();
         }
     }
+
+    //Use the following method to set geolocation override to perform automated localization testing
+    private void setGeolocationOverride(){
+        WebDriverManager.chromedriver().setup();
+        ChromeDriver driver = new ChromeDriver();
+
+        DevTools tools = driver.getDevTools();
+        tools.createSession();
+        Map<String,Object> coordinates = new HashMap<String,Object>();
+        coordinates.put("latitude",46);
+        coordinates.put("longitude",2);
+        coordinates.put("accuracy",1);
+
+        driver.executeCdpCommand("Emulation.setGeolocationOverride",coordinates);
+        driver.get("https://www.google.com");
+        driver.findElement(By.xpath("//*[@title='Search']")).sendKeys("netflix"+ Keys.RETURN);
+    }
+
+    //use this method if you want to parameterize browser from testng suite
+    //using this you can control execution of browser in the grid as well
+    //Few test cases you can execute using chrome and few using firefox etc as needed
+    //browser values can be modified in testng.xml suite file
+
+/*    @BeforeMethod
+    @Parameters({"browser"})
+    public void setupBrowser(String browser){
+        loadConfig();
+        log.info("**********************************************************************");
+        log.info("********************* Test Execution is started **********************");
+        log.info("**********************************************************************");
+
+        if(Boolean.getBoolean("selenium.grid.enabled")){
+            this.driver = getRemoteDriver(browser);
+        }else{
+            this.driver = getLocalDriver();
+        }
+
+        driver.manage().window().maximize();
+    }*/
+
+/*    private WebDriver getRemoteDriver(String browser){
+        Capabilities capabilities;
+        //if(System.getProperty("browser").equalsIgnoreCase("chrome")){
+        if(browser.equalsIgnoreCase("chrome")){
+             capabilities = new ChromeOptions();
+             log.info("Launching remote chrome browser");
+        }
+        else{
+             capabilities = new FirefoxOptions();
+            log.info("Launching remote firefox browser");
+        }
+        try {
+            return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+    }*/
+
+
 
 }

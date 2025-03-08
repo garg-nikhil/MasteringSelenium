@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="FlightReservationSuite">
+    <test name="CustomerRegistrationTest">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.java.nikhil.flightReservation.tests.CustomerRegistrationTests"/>
+        </classes>
+    </test>
+    <test name="CustomerRegistrationTestFirefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.java.nikhil.flightReservation.tests.CustomerRegistrationTests"/>
+        </classes>
+    </test>
+    <test name="CustomerRegistrationTests">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.java.nikhil.flightReservation.tests.CustomerRegistrationTests"/>
+        </classes>
+    </test>
+</suite>
