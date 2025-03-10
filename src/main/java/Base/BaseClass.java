@@ -74,7 +74,7 @@ public class BaseClass {
         driver.get("https://dev.console.hcl-x.com/");
     }
 
-    //@BeforeMethod
+    @BeforeMethod
     public void setupBrowser(){
         loadConfig();
         log.info("**********************************************************************");
@@ -125,7 +125,7 @@ public class BaseClass {
         return driver;
     }
 
-    //@AfterMethod
+    @AfterMethod
     public void tearDown(){
         if (driver != null){
             driver.quit();
@@ -189,7 +189,6 @@ public class BaseClass {
         }
     }*/
 
-    @Test
     private void interpretNetworkCalls(){
         WebDriverManager.chromedriver().setup();
         ChromeDriver driver = new ChromeDriver();
