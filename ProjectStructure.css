@@ -1,0 +1,48 @@
+HybridAutomationFramework/
+│── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── base/
+│   │   │   │   ├── BaseTest.java
+│   │   │   │   ├── BaseAPI.java
+│   │   │   ├── config/
+│   │   │   │   ├── ConfigReader.java
+│   │   │   │   ├── Constants.java
+│   │   │   ├── pages/  ➝ [For UI Automation]
+│   │   │   │   ├── LoginPage.java
+│   │   │   │   ├── HomePage.java
+│   │   │   ├── api/  ➝ [For API Automation]
+│   │   │   │   ├── request/
+│   │   │   │   │   ├── CreateUserRequest.java
+│   │   │   │   │   ├── UpdateUserRequest.java
+│   │   │   │   ├── response/
+│   │   │   │   │   ├── CreateUserResponse.java
+│   │   │   │   │   ├── UpdateUserResponse.java
+│   │   │   │   ├── services/
+│   │   │   │   │   ├── UserService.java
+│   │   │   │   ├── utils/
+│   │   │   │   │   ├── APIUtils.java
+│   │   │   │   │   ├── JSONUtils.java
+│   │   │   │   │   ├── TestDataUtils.java
+│   │   │   ├── utils/  ➝ [Common Utilities for UI & API]
+│   │   │   │   ├── LoggerUtil.java
+│   │   │   │   ├── ExcelReader.java
+│   │   │   │   ├── ReportUtil.java
+│   ├── test/
+│   │   ├── java/
+│   │   │   ├── uiTests/
+│   │   │   │   ├── LoginTest.java
+│   │   │   │   ├── HomePageTest.java
+│   │   │   ├── apiTests/
+│   │   │   │   ├── CreateUserTest.java
+│   │   │   │   ├── UpdateUserTest.java
+│   │   │   ├── integrationTests/
+│   │   │   │   ├── UIAndAPITest.java
+│   ├── resources/
+│   │   ├── config.properties
+│   │   ├── testData/
+│   │   │   ├── userData.json
+│   │   │   ├── testData.xlsx
+│   ├── pom.xml
+│   ├── testng.xml
+│   ├── README.md

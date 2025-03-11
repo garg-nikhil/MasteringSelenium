@@ -1,7 +1,6 @@
 package Base;
 
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
-import com.beust.jcommander.Parameter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -12,13 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v131.fetch.model.AuthChallengeResponse;
 import org.openqa.selenium.devtools.v131.network.Network;
 import org.openqa.selenium.devtools.v131.network.model.Request;
-import org.openqa.selenium.devtools.v131.network.model.Response;
-import org.openqa.selenium.devtools.v85.emulation.Emulation;
-import org.openqa.selenium.devtools.v85.emulation.model.ScreenOrientation;
-import org.openqa.selenium.devtools.v85.page.model.Viewport;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -26,13 +20,10 @@ import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
-import utilities.ConfigReader;
+import config.ConfigReader;
 
 import java.io.FileInputStream;
 import java.net.MalformedURLException;

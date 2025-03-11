@@ -1,10 +1,9 @@
-package com.java.nikhil.flightReservation.tests;
+package uiTests;
 
 import Base.BaseClass;
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-import utilities.ConfigReader;
+import config.ConfigReader;
 
 public class CustomerRegistrationTests extends BaseClass {
 

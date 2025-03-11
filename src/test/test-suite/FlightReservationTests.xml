@@ -2,7 +2,7 @@
 <suite name="FlightReservationSuite">
     <test name="CustomerRegistrationTest">
         <classes>
-            <class name="com.java.nikhil.flightReservation.tests.CustomerRegistrationTests"/>
+            <class name="uiTests.CustomerRegistrationTests"/>
         </classes>
     </test>
 </suite>

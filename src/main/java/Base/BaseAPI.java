@@ -1,18 +1,17 @@
-package RestAssured;
+package Base;
 
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
-import io.restassured.*;
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.testng.annotations.Test;
 
 import java.net.URI;
+
 import static io.restassured.RestAssured.given;
 
-
-public class ApiTestingBase {
+public class BaseAPI {
     private static final Logger log = LogManager.getLogger(CustomerRegistrationPages.class);
 
     public void getGoogle(){
@@ -26,25 +25,25 @@ public class ApiTestingBase {
 
     public Response makePostCall(URI uri, String request, String statusCode){
         Response response =  given()
-                            .contentType(ContentType.JSON)
-                            .body(request)
-                            .when()
-                            .post()
-                            .then()
-                            .statusCode(Integer.parseInt(statusCode))
-                            .extract().response();
+                .contentType(ContentType.JSON)
+                .body(request)
+                .when()
+                .post()
+                .then()
+                .statusCode(Integer.parseInt(statusCode))
+                .extract().response();
         return response;
     }
 
     public Response makePutCall(URI uri, String request, String statusCode){
         Response response =  given()
-                            .contentType(ContentType.JSON)
-                            .body(request)
-                            .when()
-                            .put()
-                            .then()
-                            .statusCode(Integer.parseInt(statusCode))
-                            .extract().response();
+                .contentType(ContentType.JSON)
+                .body(request)
+                .when()
+                .put()
+                .then()
+                .statusCode(Integer.parseInt(statusCode))
+                .extract().response();
         return response;
     }
 
@@ -63,12 +62,12 @@ public class ApiTestingBase {
     public void testBasicAuth(){
         RestAssured.baseURI="https://httpbin.org/basic-auth/user/pass";
 
-                             given()
-                            .auth().basic("user","pass")
-                            .when()
-                            .get()
-                            .then()
-                            .statusCode(200);
+        given()
+                .auth().basic("user","pass")
+                .when()
+                .get()
+                .then()
+                .statusCode(200);
 
-        }
+    }
 }
