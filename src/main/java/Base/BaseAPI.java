@@ -2,8 +2,11 @@ package Base;
 
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import io.restassured.specification.ResponseSpecification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -69,5 +72,25 @@ public class BaseAPI {
                 .then()
                 .statusCode(200);
 
+    }
+
+    public RequestSpecBuilder requestSpecBuilder(){
+        RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
+        requestSpecBuilder
+                .setBaseUri("")
+                .setContentType(ContentType.JSON).build();
+        return requestSpecBuilder;
+
+    }
+
+    public void responseSpecBuilder(){
+        ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder();
+        responseSpecBuilder.
+                expectContentType(ContentType.JSON).
+                expectStatusCode(200).build();
+
+        ResponseSpecification responseSpecification = new ResponseSpecBuilder().
+                                                expectContentType(ContentType.JSON).
+                expectStatusCode(200).build();
     }
 }

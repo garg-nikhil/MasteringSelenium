@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjectStructure.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Base/BaseAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Publish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Variables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/com/java/nikhil/flightReservation/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/com/java/nikhil/flightReservation/practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/PublishTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RestAssured/ApiTestingBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RestAssured/ApiTestingBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/java/nikhil/flightReservation/tests/CustomerRegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/java/nikhil/flightReservation/tests/CustomerRegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,6 +73,8 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.CaptureConsoleLogs.executor&quot;: &quot;Run&quot;,
     &quot;Application.MobileEmulationDevTools.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;Application.practice.executor&quot;: &quot;Run&quot;,
     &quot;Docker.Docker/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Docker.Selenium Grid/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
@@ -91,10 +96,11 @@
     &quot;TestNG.CustomerRegistrationPages.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerRegistrationPages.getGoogle.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerRegistrationTests.launchCustomerPortal.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.PublishTest.testPublish.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nikhi/OneDrive/Desktop/github-copilot-intellij-1.5.37-241.zip&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation/Projects/AutomationProject/src/test/java/uiTests&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.24707031&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -120,7 +126,7 @@
       <recent name="config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CaptureConsoleLogs">
+  <component name="RunManager" selected="TestNG.PublishTest.testPublish">
     <configuration name="CaptureConsoleLogs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DevTools.CaptureConsoleLogs" />
       <module name="AutomationProject" />
@@ -147,41 +153,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileEmulatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MobileEmulatorTest" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pages.com.java.nikhil.flightReservation.Solution" />
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Pages.com.java.nikhil.flightReservation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseClass.interpretNetworkCalls" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Pages.com.java.nikhil.flightReservation.practice" />
       <module name="AutomationProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Base.*" />
+          <option name="PATTERN" value="Pages.com.java.nikhil.flightReservation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Base" />
-      <option name="MAIN_CLASS_NAME" value="Base.BaseClass" />
-      <option name="METHOD_NAME" value="interpretNetworkCalls" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseClass.setGeolocation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PublishTest.testPublish" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Base.*" />
+          <option name="PATTERN" value="apiTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Base" />
-      <option name="MAIN_CLASS_NAME" value="Base.BaseClass" />
-      <option name="METHOD_NAME" value="setGeolocation" />
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.PublishTest" />
+      <option name="METHOD_NAME" value="testPublish" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -197,11 +205,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PublishTest.testPublish" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.practice" />
         <item itemvalue="Application.CaptureConsoleLogs" />
         <item itemvalue="Application.MobileEmulationDevTools" />
-        <item itemvalue="Application.MobileEmulatorTest" />
-        <item itemvalue="TestNG.BaseClass.interpretNetworkCalls" />
-        <item itemvalue="TestNG.BaseClass.setGeolocation" />
       </list>
     </recent_temporary>
   </component>
