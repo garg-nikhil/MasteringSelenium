@@ -3,11 +3,12 @@ package utils;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class collections {
     public static void main(String[] args){
         collections abc = new collections();
-        abc.temp();
+        abc.removeElementFromUserInput();
     }
 
     public void listing(){
@@ -52,6 +53,36 @@ public class collections {
                 System.out.println("Minimum element: "+minimum);
                 System.out.println("Maximum element: "+maximum);
             }
+        }
+
+        public void remove(){
+            List<Integer> list1 = new ArrayList<>();
+            list1.add(10);
+            list1.add(20);
+            list1.add(30);
+            list1.add(1);
+            list1.add(2);
+
+            System.out.println("Before removing elements: "+list1);
+            list1.remove(1);
+            System.out.println("After removing elements: "+list1);
+        }
+
+        public void removeElementFromUserInput(){
+            List<Integer> list1 = new ArrayList<>();
+            list1.add(10);
+            list1.add(20);
+            list1.add(30);
+            list1.add(1);
+            list1.add(2);
+
+            System.out.println("Before removing elements: "+list1);
+
+            Scanner sc = new Scanner(System.in);
+            int inp = sc.nextInt();
+
+            list1.remove(inp);
+            System.out.println("After removing elements: "+list1);
         }
     }
 
