@@ -1,14 +1,11 @@
 package utils;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class collections {
     public static void main(String[] args){
         collections abc = new collections();
-        abc.removeElementFromUserInput();
+        abc.toList();
     }
 
     public void listing(){
@@ -83,6 +80,36 @@ public class collections {
 
             list1.remove(inp);
             System.out.println("After removing elements: "+list1);
+        }
+
+        public void replaceElementFromUserInput(){
+         List<Integer> a = new ArrayList<>();
+            a.add(10);
+            a.add(20);
+            a.add(100);
+            a.add(1);
+
+            System.out.println("Before replacing elements: "+a);
+            a.set(1,30);
+            System.out.println("after replacing elements: "+a);
+            Scanner sc = new Scanner(System.in);
+            //sc.nextInt();
+            //sc.nextInt();
+            //sc.close();
+            a.set(sc.nextInt(),sc.nextInt());
+            System.out.println("after replacing elements: "+a);
+        }
+
+        public void toList(){
+        String[] arr = {"abc","def","ghi","jkl"};
+        System.out.println("before converting it to list: "+ Arrays.toString(arr));
+
+        List<String> list = Arrays.asList(arr);
+        System.out.println("After converting it to list: "+list);
+        List<String> list2 = new ArrayList<>(Arrays.asList(arr));
+
+        list2.add("mno");
+        System.out.println("After converting it to list: "+list2);
         }
     }
 
