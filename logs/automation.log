@@ -746,3 +746,23 @@ setTimeout(function(){google&amp;&amp;google.tick&amp;&amp;google.timers&amp;&am
 2025-03-08 19:18:54 [main] INFO  CustomerRegistrationPages - https://dedicatedqavalidation.hcl-x.com/en/user/profile 0 The key "user-scale" is not recognized and ignored.
 2025-03-08 19:18:54 [main] INFO  CustomerRegistrationPages - https://dedicatedqavalidation.hcl-x.com/en/user/profile 0 The key "maximum-scalable" is not recognized and ignored.
 2025-03-08 19:18:54 [main] INFO  CustomerRegistrationPages - https://dedicatedqavalidation.hcl-x.com/_next/static/chunks/pages/user/profile-6d3732292d64e576.js 0:6969 "Structure Data: Error in parsing JSON"
+2025-03-16 15:53:41 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:53:41 [main] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-03-16 15:53:41 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:53:46 [main] INFO  CustomerRegistrationPages - Launching local chrome
+2025-03-16 15:55:24 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:55:24 [main] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-03-16 15:55:24 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:55:25 [main] INFO  CustomerRegistrationPages - Launching local chrome
+2025-03-16 15:55:39 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:55:39 [main] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-03-16 15:55:39 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:55:40 [main] INFO  CustomerRegistrationPages - Launching local chrome
+2025-03-16 15:55:58 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:55:58 [main] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-03-16 15:55:58 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:55:59 [main] INFO  CustomerRegistrationPages - Launching local chrome
+2025-03-16 15:58:28 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:58:28 [main] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-03-16 15:58:28 [main] INFO  CustomerRegistrationPages - **********************************************************************
+2025-03-16 15:58:29 [main] INFO  CustomerRegistrationPages - Launching local chrome

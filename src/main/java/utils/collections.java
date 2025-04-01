@@ -5,7 +5,7 @@ import java.util.*;
 public class collections {
     public static void main(String[] args){
         collections abc = new collections();
-        abc.toList();
+        abc.linkedList();
     }
 
     public void listing(){
@@ -110,6 +110,21 @@ public class collections {
 
         list2.add("mno");
         System.out.println("After converting it to list: "+list2);
+            System.out.println(""+list.equals(list2));
+        }
+
+        public void linkedList(){
+        LinkedList<Integer> linkedlist = new LinkedList<>();
+            linkedlist.add(10);
+            linkedlist.add(20);
+            linkedlist.add(30);
+            linkedlist.add(40);
+            linkedlist.add(50);
+
+            for (Integer integer : linkedlist) {
+                System.out.println(integer + " ");
+            }
+
         }
     }
 

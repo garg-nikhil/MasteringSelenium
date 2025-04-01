@@ -1,13 +1,12 @@
 package Base;
 
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
+import config.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
@@ -16,6 +15,7 @@ import org.openqa.selenium.devtools.v131.network.model.Request;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.logging.LogEntries;
 import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.logging.LogType;
@@ -23,9 +23,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import config.ConfigReader;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.*;
@@ -121,6 +122,29 @@ public class BaseClass {
         if (driver != null){
             driver.quit();
         }
+    }
+
+    private void chromeOptions(){
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("start-maximized");
+
+    }
+
+    private void getScreenshot() throws IOException {
+        File input = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File output = new File("");
+        FileUtils.copyFile(input,output);
+    }
+
+    private void sampleActionsUsages(){
+        Actions actions = new Actions(driver);
+        WebElement source = driver.findElement(By.xpath(""));
+        WebElement target = driver.findElement(By.xpath(""));
+        actions.dragAndDrop(source,target).perform();
+
+        actions.dragAndDropBy(source, 150, 230).perform();
+        actions.moveToLocation(100,200).perform();
+        actions.moveToElement(source).click().build().perform();
     }
 
     //Use the following method to set geolocation override to perform automated localization testing
