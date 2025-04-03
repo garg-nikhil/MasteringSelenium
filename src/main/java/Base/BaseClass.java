@@ -3,9 +3,12 @@ package Base;
 import Pages.com.java.nikhil.flightReservation.CustomerRegistrationPages;
 import config.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.configuration.PropertiesConfiguration;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -29,20 +32,26 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 public class BaseClass {
     protected WebDriver driver;
     protected WebDriverWait wait;
     private static final Logger log = LogManager.getLogger(CustomerRegistrationPages.class);
+    private static PropertiesConfiguration config;
 
 
     private void loadConfig(){
-        Properties Config = new Properties();
         try{
             String path = System.getProperty("user.dir") + "/src/main/resources/config/Configuration.properties";
-            FileInputStream file = new FileInputStream(path);
-            Config.load(file);
+            File file = new File(path);
+            FileInputStream fis = new FileInputStream(file);
+            config = new PropertiesConfiguration();
+            config.load(fis);
+            fis.close();
         }
         catch(Exception e){
             e.printStackTrace();

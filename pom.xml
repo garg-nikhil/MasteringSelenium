@@ -17,6 +17,7 @@
     <testng.version>7.10.2</testng.version>
     <jackson.version>2.18.2</jackson.version>
     <rest.assured.version>5.5.0</rest.assured.version>
+    <commons-configuration.version>1.10</commons-configuration.version>
     <!-- plugins versions -->
     <maven.compiler.version>3.11.0</maven.compiler.version>
     <maven.dependency.version>3.6.0</maven.dependency.version>
@@ -75,7 +76,12 @@
       <artifactId>rest-assured</artifactId>
       <version>${rest.assured.version}</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/commons-configuration/commons-configuration -->
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <version>${commons-configuration.version}</version>
+    </dependency>
   </dependencies>
   <build>
     <finalName>selenium-docker</finalName>
