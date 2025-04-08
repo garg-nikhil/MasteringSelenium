@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentTestNGListeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/Spaceship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/UFO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/features/Advanced.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/features/Basic.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Practice/CodingPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/CodingPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ReportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/ExtentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uiTests/CustomerRegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTests/CustomerRegistrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/test-suite/FlightReservationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/test-suite/FlightReservationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/reports/TestResults.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
