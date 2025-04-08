@@ -18,6 +18,8 @@
     <jackson.version>2.18.2</jackson.version>
     <rest.assured.version>5.5.0</rest.assured.version>
     <commons-configuration.version>1.10</commons-configuration.version>
+    <org.apache.poi.version>5.3.0</org.apache.poi.version>
+    <com.aventstack.version>5.1.1</com.aventstack.version>
     <!-- plugins versions -->
     <maven.compiler.version>3.11.0</maven.compiler.version>
     <maven.dependency.version>3.6.0</maven.dependency.version>
@@ -76,6 +78,20 @@
       <artifactId>rest-assured</artifactId>
       <version>${rest.assured.version}</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>${org.apache.poi.version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>${com.aventstack.version}</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/commons-configuration/commons-configuration -->
     <dependency>
       <groupId>commons-configuration</groupId>

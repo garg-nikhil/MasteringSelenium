@@ -16,6 +16,8 @@ public class CustomerRegistrationTests extends BaseClass {
         CustomerRegistrationPages customerRegistrationPages = new CustomerRegistrationPages(driver);
         driver.get(ConfigReader.getProperty("url"));
         customerRegistrationPages.submitData();
+        System.out.println(System.getProperty("user.dir"));
+        System.out.println(System.getProperty("java.version"));
     }
 
 
