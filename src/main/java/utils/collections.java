@@ -8,6 +8,14 @@ public class collections {
         abc.linkedList();
     }
 
+    public void practice(){
+        HashMap<String,Integer> abc = new HashMap<>();
+        abc.put("abc",10);
+        abc.put("def",20);
+
+        System.out.println(abc);
+    }
+
     public void listing(){
         List<String> list = new ArrayList<>();
         list.add("Linkedlist");

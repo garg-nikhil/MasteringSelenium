@@ -146,14 +146,18 @@ public class BaseClass {
     }
 
     private void sampleActionsUsages(){
+        //following  is used to perform actions like drag and drop, mouse hover, right click etc
+
         Actions actions = new Actions(driver);
         WebElement source = driver.findElement(By.xpath(""));
         WebElement target = driver.findElement(By.xpath(""));
         actions.dragAndDrop(source,target).perform();
 
-        actions.dragAndDropBy(source, 150, 230).perform();
-        actions.moveToLocation(100,200).perform();
-        actions.moveToElement(source).click().build().perform();
+        actions.dragAndDropBy(source, 150, 230).perform(); //this we can use for drag and drop
+        actions.moveToLocation(100,200).perform(); //this we can use for mouse-hover
+        actions.moveToElement(source).click().build().perform();         //this we can use for click
+        actions.contextClick(target).perform();                         //this we can use for right click
+        actions.doubleClick(target).perform();                          //this we can use for double click
     }
 
     //Use the following method to set geolocation override to perform automated localization testing

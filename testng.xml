@@ -2,7 +2,7 @@
 <suite name="FlightReservationSuite">
     <test name="CustomerRegistrationTest">
         <classes>
-            <class name="uiTests.CustomerRegistrationTests"/>
+            <class name="uiTests.googly"/>
         </classes>
     </test>
 </suite>

@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99240e6c-81cb-4085-9b00-5df815bcfd2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/features/Advanced.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/features/Basic.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Pojo/CreatePageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Pojo/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Pojo/PageSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Request/Pojo/Variables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Response/Pojo/AuthoringCreatePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Response/Pojo/CreatePageResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Api/Response/Pojo/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/com/java/nikhil/flightReservation/ToolsQA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/FileOpsNio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/JavaMasterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/MySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Practice/StingOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/CreatePageAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uiTests/Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uiTests/googly.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/reports/TestResults.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/automation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Base/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/ConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/collections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/collections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uiTests/CustomerRegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uiTests/CustomerRegistrationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +99,15 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.CaptureConsoleLogs.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CreatePageAPITest.executor&quot;: &quot;Run&quot;,
     &quot;Application.ExcelReader.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FileOpsNio.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JavaMasterClass.executor&quot;: &quot;Run&quot;,
     &quot;Application.MobileEmulationDevTools.executor&quot;: &quot;Run&quot;,
     &quot;Application.SampleJavaCode.executor&quot;: &quot;Run&quot;,
     &quot;Application.Solution.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StingOperations.executor&quot;: &quot;Run&quot;,
+    &quot;Application.a.executor&quot;: &quot;Run&quot;,
     &quot;Application.collections.executor&quot;: &quot;Run&quot;,
     &quot;Application.practice.executor&quot;: &quot;Run&quot;,
     &quot;Docker.Docker/docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
@@ -107,8 +131,12 @@
     &quot;TestNG.C:/Automation/Projects/AutomationProject/testng.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerRegistrationPages.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerRegistrationPages.getGoogle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CustomerRegistrationTests.ele.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.CustomerRegistrationTests.launchCustomerPortal.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.PublishTest.testPublish.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.googly.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.googly.tryGoogl.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.googly.tryGoogly.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -138,9 +166,9 @@
       <recent name="config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml">
-    <configuration name="ExcelReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.ExcelReader" />
+  <component name="RunManager" selected="TestNG.googly.tryGoogl">
+    <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.a" />
       <module name="AutomationProject" />
       <extension name="coverage">
         <pattern>
@@ -152,40 +180,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Pages.com.java.nikhil.flightReservation.practice" />
+    <configuration name="C:/Automation/Projects/AutomationProject/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Pages.com.java.nikhil.flightReservation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasicSecurityTests.sessionHijacking" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Security.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Security.Tests" />
-      <option name="MAIN_CLASS_NAME" value="Security.Tests.BasicSecurityTests" />
-      <option name="METHOD_NAME" value="sessionHijacking" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AutomationProject" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/test-suite/FlightReservationTests.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -193,17 +190,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PublishTest.testPublish" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="googly" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AutomationProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiTests.*" />
+          <option name="PATTERN" value="uiTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiTests" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.PublishTest" />
-      <option name="METHOD_NAME" value="testPublish" />
+      <option name="PACKAGE_NAME" value="uiTests" />
+      <option name="MAIN_CLASS_NAME" value="uiTests.googly" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="googly.tryGoogl" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uiTests" />
+      <option name="MAIN_CLASS_NAME" value="uiTests.googly" />
+      <option name="METHOD_NAME" value="tryGoogl" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="googly.tryGoogly" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AutomationProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uiTests" />
+      <option name="MAIN_CLASS_NAME" value="uiTests.googly" />
+      <option name="METHOD_NAME" value="tryGoogly" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -219,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/src/test/test-suite/FlightReservationTests.xml" />
-        <item itemvalue="Application.ExcelReader" />
-        <item itemvalue="TestNG.PublishTest.testPublish" />
-        <item itemvalue="TestNG.BasicSecurityTests.sessionHijacking" />
-        <item itemvalue="Application.practice" />
+        <item itemvalue="TestNG.googly.tryGoogl" />
+        <item itemvalue="TestNG.C:/Automation/Projects/AutomationProject/testng.xml" />
+        <item itemvalue="TestNG.googly" />
+        <item itemvalue="TestNG.googly.tryGoogly" />
+        <item itemvalue="Application.a" />
       </list>
     </recent_temporary>
   </component>
