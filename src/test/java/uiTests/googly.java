@@ -18,7 +18,6 @@ public class googly extends BaseClass {
 
     @Test
     public void tryGoogl(){
-
         driver.get("https://www.google.com/");
         driver.findElement(By.xpath("//*[@title='Search']")).sendKeys("Hello");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

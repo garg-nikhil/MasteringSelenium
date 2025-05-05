@@ -918,3 +918,11 @@ setTimeout(function(){google&amp;&amp;google.tick&amp;&amp;google.timers&amp;&am
 2025-04-30 11:31:28 [main] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
 2025-04-30 11:31:28 [main] INFO  CustomerRegistrationPages - **********************************************************************
 2025-04-30 11:31:29 [main] INFO  CustomerRegistrationPages - Launching local chrome
+2025-05-05 09:52:31 [TestNG-tests-1] INFO  CustomerRegistrationPages - **********************************************************************
+2025-05-05 09:52:31 [TestNG-tests-1] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-05-05 09:52:31 [TestNG-tests-1] INFO  CustomerRegistrationPages - **********************************************************************
+2025-05-05 09:52:35 [TestNG-tests-1] INFO  CustomerRegistrationPages - Launching local chrome
+2025-05-05 10:16:39 [TestNG-tests-1] INFO  CustomerRegistrationPages - **********************************************************************
+2025-05-05 10:16:39 [TestNG-tests-1] INFO  CustomerRegistrationPages - ********************* Test Execution is started **********************
+2025-05-05 10:16:39 [TestNG-tests-1] INFO  CustomerRegistrationPages - **********************************************************************
+2025-05-05 10:16:40 [TestNG-tests-1] INFO  CustomerRegistrationPages - Launching local chrome
